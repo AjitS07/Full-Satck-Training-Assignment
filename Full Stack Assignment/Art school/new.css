@@ -1,0 +1,332 @@
+/* General Styles */
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.container button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #666;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.close {
+    margin-right: 20px;
+}
+
+.close1 {
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Background Image */
+/* .bg_image {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.art_1 {
+    text-align: center;
+}
+
+.Art, .school_1 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.u-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.u-container_1 {
+    margin-right: 20px;
+}
+
+.u-text-1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.u-costom-text {
+    font-size: 24px;
+    color: #777;
+}
+
+.u-container_2 {
+    max-width: 500px;
+}
+
+.u-text-2 {
+    font-size: 18px;
+    color: #555;
+}
+
+.main-container {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.A-container01 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.A-container-text-1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.item1 {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.item1 img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.item1 h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.item1 p {
+    font-size: 16px;
+    color: #666;
+}
+
+.main-box {
+    background-color: #eaeaea;
+    padding: 40px;
+    text-align: center;
+}
+
+.layout-box1 {
+    margin: 20px;
+}
+
+.text-4 {
+    font-size: 24px;
+    color: #333;
+}
+
+.u-text-4 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.u-text-5 {
+    font-size: 16px;
+    color: #555;
+}
+
+.button-style {
+    padding: 10px 20px;
+    background-color: #666;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.u-section-6 {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.u-sheet-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.u-group-1 {
+    margin-bottom: 40px;
+}
+
+.middle {
+    text-align: center;
+}
+
+.u-text-6 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.text-7 {
+    font-size: 18px;
+    color: #777;
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Boxes Styles */
+/* .box {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.box1 {
+    background-color: #f9f9f9;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.text {
+    font-size: 24px;
+    color: #333;
+}
+
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.u-text-A {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.u-text-B {
+    font-size: 18px;
+    color: #555;
+}
+
+.u-text-C {
+    font-size: 16px;
+    color: #777;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-C {
+    padding: 10px 20px;
+    background-color: #666;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.u-section-10 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.u-link {
+    color: white;
+    text-decoration: none;
+}
+
+.u-text {
+    color: white;
+} */
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .Art, .school_1 {
+        font-size: 40px;
+    }
+
+    .u-text-1, .u-text-4 {
+        font-size: 24px;
+    }
+
+    .A-container-text-1 {
+        font-size: 24px;
+    }
+
+    .item1 h3 {
+        font-size: 18px;
+    }
+
+    .text-4, .u-text-6, .u-text-A {
+        font-size: 22px;
+    }
+} 
+
+@media only screen and (max-width: 480px) {
+    .Art, .school_1 {
+        font-size: 30px;
+    }
+
+    .u-text-1, .u-text-4 {
+        font-size: 20px;
+    }
+
+    .A-container-text-1 {
+        font-size: 20px;
+    }
+
+    .item1 h3 {
+        font-size: 16px;
+    }
+
+    .text-4, .u-text-6, .u-text-A {
+        font-size: 18px;
+    }
+
+    .container button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .close1 h1 {
+        font-size: 18px;
+    }
+}
