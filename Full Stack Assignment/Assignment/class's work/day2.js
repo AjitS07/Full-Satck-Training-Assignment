@@ -101,3 +101,41 @@
 // }
 // sum();
 
+    
+// function sum(a,b){
+
+//     console.log(a+b);
+
+
+
+//----------------------------------------------------------- console arry
+    
+// let arr = [10, 20, 30, 40, 50];
+// console.log(arr[arr.length-1]);
+// arr[2] ="Techno";
+// console.log(arr);
+
+// let nestedArr = [10,20,30,[1,2,3,4],[20,30,40,["aaa","aab",[true , false]]]];
+
+// console.log(nestedArr[3][3][1]);
+
+// let newArr1 = nestedArr[nestedArr.length-1];
+// let newArr2 = newArr1[newArr1.length-1];
+// let newArr3 = newArr2[newArr2.length-1];
+// let ele = newArr3[newArr3.length-1];
+// console.log(ele);
+
+
+
+//---------------------------------object-----------------------------------------------------------
+
+let obj = {
+    firstName : "jay shree Ram",
+    lastName : "kumar",
+   
+};
+
+console.log(obj);
+
+
+

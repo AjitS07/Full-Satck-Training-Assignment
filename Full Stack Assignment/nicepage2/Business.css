@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f1f1f1;
+    font-size: 14px;
+    line-height: 1,42857;
+    color:#333;
+    background-color:#fff;
+    font-family: Helvetica Neue,Arial, Helvetica, sans-serif;
+}
+
+
+.page-header {
+    z-index: 100px;
+    border: none;
+    height: 70px;
+    position: relative;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-img {
+    flex: 1;
+}
+
+.screen-sizes {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.close {
+    flex: 1;
+    text-align: right;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* .menu-toggle {
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar .menu-close {
+    font-size: 24px;
+    cursor: pointer;
+    text-align: right;
+}
+
+.sidebar .menu-items {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .menu-items li {
+    margin: 20px 0;
+}
+
+.sidebar .menu-items a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.overlay.active {
+    visibility: visible;
+    opacity: 1;
+} */
+
+
+
+
+#checkbtn {
+    float: right;
+}
+.slide{
+   
+   
+    background-color: #333;
+    transition: 0.5s ease;
+    transform:translateX(-100px)
+}
