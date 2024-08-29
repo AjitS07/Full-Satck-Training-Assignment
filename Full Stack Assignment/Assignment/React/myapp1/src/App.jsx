@@ -1,12 +1,14 @@
-import Home from "./Home"
-
+// import Home from "./Home"
+import Card from "./card"
 function App() {
   
   return (
-    <>
-    <h1> Hello Techno </h1>
-    <Home/>
-    </>
+    <div className="grid grid-cols-4 gap-4 p-4">
+    <Card 
+
+
+
+    </div>
   )
 }
 
