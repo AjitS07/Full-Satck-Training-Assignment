@@ -11,7 +11,7 @@ console.log(`The sum of the elements in the array is ${sum}.`);
 
 // Solution:
 
-let sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+ sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
 console.log(`The sum of the elements in the array is ${sum}.`); // Output: The sum of the elements in the array is 15.
 
