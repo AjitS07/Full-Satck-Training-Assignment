@@ -1,25 +1,32 @@
 const express = require("express");
+const userRoutes = require("./router/user");
+const productRoutes = require("./router/product");
+
 
 const app = express();
 app.use(express.json());
 
-const users = [
-    {
-        userName : "Rohan",
-        email : "rohan@1006",
-        contactDetails : "1233232323232"
-    }
-]
+app.use("/api",userRoutes);
+//app.use("/product",productRoutes);
 
-app.get("/",(req,res)=>{
-    res.send("Hello World");
-});
+// const users = [
+//     {
+//         userName : "Rohan",
+//         email : "rohan@1006",
+//         contactDetails : "1233232323232"
+//     }
+// ]
 
-app.post("/create",(req,res)=>{
-    const data = req.body;
-   users.push(data);
-    res.send({message : "User Created",data:data});
-});
+// app.get("/",(req,res)=>{
+//     res.send("Hello World");
+// });
+
+// app.post("/create",(req,res)=>{
+//     const data = req.body;
+//    users.push(data);
+//     res.send({message : "User Created",data:data});
+// });
+// MVC --- model , view ,
 app.listen(3000,()=>{
-    console.log("Server is running on 3000")
-})
+    console.log("Server is running on 3000");
+});
