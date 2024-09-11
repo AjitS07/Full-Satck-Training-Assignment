@@ -38,9 +38,13 @@ router.delete("/Users/:id",(req,res)=>{ // http://localhost:3000/api/deleteUsers
     if(index === -1){
         return res.send({message:"User not found"})
     }
-    users.splice(index,1);
-    res.send({message : "User Delete"})
+    const delete_item= users.splice(index,1);
+    res.send({message : "User Delete",delete_item})
+
+
+
 
 
 });
+
 module.exports = router;
