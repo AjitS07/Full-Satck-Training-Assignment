@@ -1,11 +1,13 @@
 const express = require("express");
 const userRoutes = require("./router/user");
 const productRoutes = require("./router/product");
+const connectDb = require("./confg/db");
 
 
 const app = express();
 app.use(express.json());
-
+//app.use()
+connectDb();
 app.use("/api",userRoutes);
 //app.use("/product",productRoutes);
 
