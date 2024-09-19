@@ -1,6 +1,7 @@
 const express = require("express");
 const users = require("../user");
-const {getUser , createUser , updateUser ,deleteUser} = require("../controller/user");
+
+const {getUser , createUser , updateUser ,deleteUser} = require("../controller/user1");
 const middleware = require("../middleware/middleware");
 // const fs = require("fs");
 

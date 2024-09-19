@@ -5,7 +5,7 @@ import Dashboard from '../Login'
 const Router = createBrowserRouter( {
 
     element : <parent/>
-    children : [{
+    childeren : [{
         path : "/",
         element : <Dashboard/>
     },
