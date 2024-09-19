@@ -11,7 +11,7 @@ const userSchema = mongoose.Schema({
     
         validate : {
             validator : function(value){
-                return validator.isAlpha(value ,"en-US", {ignore:""});
+                return validator.isAlpha(value ,"en-US", {ignore:" "});
             },
             message : "Name should only contain alphabetic characters"
         }
@@ -37,11 +37,11 @@ const userSchema = mongoose.Schema({
             validator : function(value){
                 return validator.isStrongPassword(value,{
                     
-                        minimumLength: 8,
-                        minUppercase: 1,
-                        minLowercase: 1,
-                        minNumbers: 1,
-                        minSymbols: 1
+                    minLength : 8,
+                    minLowercase : 1,
+                    minUppercase : 1,
+                    minNumbers : 1,
+                    minSymbols : 1  
                     
                 })
             },
@@ -59,23 +59,15 @@ const userSchema = mongoose.Schema({
                 },
                 message : "Please enter a valid phone number"
             }
-
-
-
-
-
         }
-       
-    
-
 });
 
 userSchema.pre("save",async function(next){
    const user = this;
    if(!user.isModified("password")) return next();
-   const hashedPassword = await bcrypt.hash(use.password,10);
+   const hashedPassword = await bcrypt.hash(user.password , 10);
    user.password = hashedPassword;
-//    console.log()
+   console.log(password);
    next();
 })
 
