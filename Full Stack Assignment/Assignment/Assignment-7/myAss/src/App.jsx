@@ -1,9 +1,8 @@
-// import Practice from "./Componet/Practice"
-// import Productlist from "./Productlist"
-// import tailwindcss from "tailwindcss"
+import Practice from "./Componet/Practice"
+import Productlist from "./Productlist"
+//import tailwindcss from "tailwindcss"
 
-//import Props from "./Props/Props"
-import tailwindcss from 'tailwindcss'
+import Props from "./Props/Props"
 import Index from "./Props/Index"
 
 
@@ -14,8 +13,12 @@ function App() {
      <div className="p-4  ">
     <>
       
+      
     
-      <Index/>
+     <Productlist/> 
+    
+     
+
 
       
     

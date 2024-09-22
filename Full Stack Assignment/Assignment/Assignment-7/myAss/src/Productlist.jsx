@@ -1,5 +1,5 @@
 import react, { useEffect, useState } from 'react'
-// import tailwindcss from 'tailwindcss'
+//import tailwindcss from 'tailwindcss'
 
 const Productlist = () => {
   const [productList, setproductList] = useState ([]);

@@ -1,18 +1,4 @@
-// import React from 'react'
 
-// const Props = (props) => {
-// //   console.log(props)
-//   return (
-//     <div>
-//         <h1>Hello  {props.name.FirstName} ,{props.name.age},{props.name.address} </h1>
-//     </div>
-//   )
-// }
-
-// export default Props
-
-//Build a `ProfileCard` component that takes `name`, `age`, and `location` as props and displays them in a card layout.
-import tailwindcss from 'tailwindcss'
 import React from 'react'
 
 const ProfileCard = ( props ) => {
