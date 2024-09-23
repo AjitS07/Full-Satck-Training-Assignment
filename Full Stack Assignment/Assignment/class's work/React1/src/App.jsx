@@ -1,13 +1,13 @@
 //import { useEffect, useMemo, useRef, useState } from "react";
 //import Card from "./Card"
-import Login from "./Login"
+//import Login from "./Login"
 // import State from "./State"
 // import Child from "./Child";
 // import ProductList from "./ProductList";
 //import { BrowserRouter, Route, RouterProvider, Routes } from "react-router-dom";
 // import Signup from "./Signup";
 // import Dashboard from "./Dashboard";
-// import Navbar from "./Navbar";
+ import Navbar from "./Navbar";
 // import ContactUs from "./ContactUs";
 // import Services from "./Services";
 // import AboutUs from "./AboutUs";
@@ -38,7 +38,7 @@ function App() {
       
       {/* //<BrowserRouter/> */}
       
-      <Login/>
+      {/* <Login/> */}
       {/* <p>
       {count} 
       </p>
@@ -49,7 +49,7 @@ function App() {
        
       {/* <input type="text" placeholder="Enter Name" ref={inputRef} />
       <button onClick={()=>{console.log(inputRef)}}>Show Ref Value</button> */}
-      {/* <Navbar /> */}
+      <Navbar />
       {/* <RouterProvider router={Router} /> */}
       {/* <p>
       The Total sum is : {sum}

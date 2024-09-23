@@ -2,8 +2,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
-import { FaEye } from "react-icons/fa";
-import { FaEyeSlash } from "react-icons/fa";
+
 
 const Singup = () => {
     const [showPassword, setShowPassword] = useState (false);
@@ -57,8 +56,8 @@ const Singup = () => {
                     <div className='relative'>
                         <label className='text-blue-500 font-medium'>Password</label>
                         <input type={showPassword ? "text" : "password"} className={`p-2 border w-[90%] my-2 rounded shadow-xl ${errors.password ? "border-red-500 outline-none" : "border-gray-500 outline-blue-500"}`} {...register("password")} />
-                        <button className='' type="button" onClick={PasswordVisibility} className='absolute right-5 top-10 text-blue-500'>
-                                {showPassword ? <FaEyeSlash />: <FaEye />}
+                        <button type="button" onClick={PasswordVisibility} className='absolute right-5 top-10 text-blue-500'>
+                                {showPassword ? 'hide':'show'}
                             </button>
                         {errors.password && (
                             <p className='text-xs text-red-500'>{errors.password.message}</p>
@@ -76,7 +75,7 @@ const Singup = () => {
             </form>
         </div>
     </div>
-  )
+)
 }
 
 export default Singup
