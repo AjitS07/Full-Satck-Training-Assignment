@@ -5,4 +5,4 @@ let lastName = "Sharma";
 
 let fullName = firstName + " " + lastName;
 
-console.log(fullName); // Output: Ajit Sharma
+console.log(fullName); // Output: Ajit Sharmaṇ
