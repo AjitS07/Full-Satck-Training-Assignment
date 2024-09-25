@@ -1,7 +1,11 @@
 import { zodResolver } from '@hookform/resolvers/zod';
+import axios from 'axios';
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
+import { useDispatch } from 'react-redux';
 import { z } from 'zod';
+import { setLoading, setSuccess, setError, signup } from '../Redux/Slices/authSlices';
+
 
 
 const Singup = () => {
@@ -21,9 +25,11 @@ const Singup = () => {
         resolver : zodResolver(validationSchema)
     });
 
+    const dispatch = useDispatch();
 
-    const onSubmit = (data)=>{
-        console.log(data);
+    const onSubmit = async (data)=>{
+        dispatch(signup(data));
+      
 
     }
     const PasswordVisibility = () =>{
