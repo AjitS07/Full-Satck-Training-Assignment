@@ -1,10 +1,9 @@
 const User = require("../model/user");
 const bcrypt = require("bcrypt");
 
-exports.signup = async (req,res ,next)=>{
+exports.signup = async (req,res , next)=>{
     try {
-        const { name , email , password , phoneNumber } = req.body;
-        console.log(req.body);
+        const { name , email , password , phoneNumber, role } = req.body;
         const isExisting = await User.findOne({email : email});
         if(isExisting){
             const error = new Error("User already exist")
@@ -17,7 +16,7 @@ exports.signup = async (req,res ,next)=>{
         const newUser = new User({name : name , email : email , password : hashedPassword , phoneNumber  : phoneNumber});
         console.log("hello");
         await newUser.save();
-        res.status(201).send({message : "Account created",data:newUser});
+        res.status(201).send({message : "Account created"});
     } catch (error) {
         next(error);
     }
