@@ -181,6 +181,9 @@ input:checked~.menu {
     
     
 }
+.hello{
+    background-color:  red;
+}
 .back-bg1 .image_1::before{
 
     animation-duration: 1500;
